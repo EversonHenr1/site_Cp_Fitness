@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>CP Fitness || Planos</title>
+
+        <link rel="stylesheet" href="../Css/Estilo01.css">
+
+       <link rel="shotcut icon" href="../Img padrao/favicon.png">
+
+        <meta charset="utf-8">
+
+        <!--Java -->
+
+        <script src="../Img padrao/formulario.js"> </script>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+            body {
+  height: 100vh;
+  background-image: linear-gradient(-45deg,#BB0A21,rgba(0, 0, 0, 0.418),#BB0A21,gray,#BB0A21,#BB0A21);
+    animation: anima 60s ease infinite;
+    background-size: 400% 400%;
+
+}
+
+@keyframes anima{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+        </style>
+        
+           
+        
+         
+        
+    </head>
+
+
+    <!-- Cabeçario -->
+    
+        
+    <header>
+
+        <div><a href="../Home/Homepage1.html" name="homee"><img src="../Img padrao/Logo.jpg" id="img1"><legend>CP Fitness</legend></div>
+        
+        <ul>
+            <a href="../Sobre/sobre.html" id="linkCab"><li>Sobre</li></a>
+            <a href="../Atividades/atividades.html" id="linkCab"><li>Atividades</li></a>
+            <a href="../pagamento/pagamento.html" id="linkCab"><img src="../Img padrao/pag1.png" id='img3'onmouseover='this.src="../Img padrao/pag2.png"'onmouseout='this.src="../Img padrao/pag1.png"' ></a>
+            <a href="../loginCadastro/Login.html" id="linkCab"><img src="../Img padrao/usuario2.png" id="img2" onmouseover="this.src='../Img padrao/usuario.png'" onmouseout="this.src='../Img padrao/usuario2.png'"></a>
+        </ul>
+
+    </header>
+    
+    <!-- Cabeçario FIM-->
+    
+
+    <!-- Pagamento img -->
+    <div id="imgPag">
+        <img src=""id="imgPag1">
+    </div>
+
+    <!-- Pagamento img FIM-->
+
+    <!-- Pagamento -->
+    
+
+        
+        
+        <!-- Vantagens-->
+
+        <div id="infPlanos">
+            <h2 id="valor1">Preço Mensal:</h2>
+            <h2 id="valor">R$ 30,00</h2>
+
+            <p>Venha Fazer parte da CP Fitness<br> numero 1 da região.</p>
+            <br>
+
+            
+            
+            <ul>
+                <li>Jiu-jitsu</li>
+                <li>Zumba</li>
+                <li>Funcinal</li>
+                <li>Musculação</li>
+            </ul>
+
+        </div>
+        
+
+        
+        <!--formulario-->
+
+        <div class="contentPag">
+        <!--Titulo-->
+
+        <h3 id="tiPlanos">Pagamento</h3>
+        <legend>selecione seu plano<br> e metodo de pagamento abaixo e atualize: </legend>
+
+        <form name="pag" class="formulario" action="post">
+
+            <select name="planos" id="listPlanos" >
+                <option value="" >Tipos de plano</option>
+                <option value="msl">Mensal</option>
+                <option value="anl">Anual</option>
+            </select> 
+            
+            <br>
+           
+
+            <div id="paga" name="divP">
+                <select name="lplanos" id="listPlanos" >
+                    <option value="" >Tipos de Pagamento </option>
+                    <option value="pix"  >Pix</option>
+                    <option value="cdt">Credito</option>
+                    <option value="dbt">Debito</option>
+                </select> 
+                </div>
+                
+
+                    
+                
+
+
+                <!--Pix-->
+
+                <div id="pix">
+                    
+                    <h5 id="ti2Planos" >pix</h5>
+                    <br>
+                    <p>
+                    <label for="chave">Chave Pix  </label>
+                    <input type="text" name="chave" placeholder="ex. 9999999999999999999">
+                    <br>
+                    </p>
+                    <p>
+                    <label for="cpf_pag">Cpf  </label>
+                    <input type="text" name="cpf_pag"  placeholder="ex. 000.000.000 - 00">
+                    </p>
+                    <input type="submit" value="Assinar">
+        
+                </div>
+                <!--Pix FIM-->
+
+                
+
+                <!--Credito-->
+
+                <div id="Credito">
+
+                    
+                    <h5 id="ti2Planos">credito</h5>
+                    <br>
+                    <p>
+                    <label for="numCartaoC">Numero cartão:</label>
+                    <input type="number" name="numCartaoC"placeholder="ex: 9999 9999 9999 9999" >
+                    <br>
+                    </p>
+                    <p>
+                    <label for="numSgC">seguranca:</label>
+                    <input type="number" name="numSgC" placeholder="ex: 999">
+                    <br>
+                    </p>
+                    <p>
+                    <label for="cpf_pagC">Cpf:</label>
+                    <input type="text" name="cpf_pagC" placeholder="ex. 000.000.000 - 00">
+                    </p>
+                    <input type="submit" value="Assinar">
+        
+                </div>
+                <!--Credito FIM-->
+
+                <!--Debito-->
+
+                <div id="Debito">
+                    
+                    <h5 id="ti2Planos">debito</h5>
+                    <br>
+                    <p>
+                    <label for="numCartaoD">Numero cartão:</label>
+                    <input type="number" name="numCartaoD" placeholder="ex: 9999 9999 9999 9999"></p>
+                    <br>
+                    <p>
+                    <label for="numSgcD">seguranca:</label>
+                    <input type="number" name="numSgcD" placeholder="ex: 999"></p>
+                    <br>
+                    <p>
+                    <label for="cpf_pag">Cpf:</label>
+                    <input type="text" name="cpf_pag" placeholder="ex. 000.000.000 - 00"></p>
+                    <input type="submit" value="Assinar" >
+
+                </div>
+
+                <!--Debito FIM-->
+
+                <!--    Botão Atualizar -->
+                <div id="btt"><a href="#" onclick="fa(),tempo();" id="buttonAtt">Atualizar</a></div>
+                
+                
+            
+
+        </form>
+        <!--formulario FIM-->
+
+        </div>
+        
+
+
+    <!-- Pagamento Fim-->
+    
+
+    <body>
+
+    </body>
+</html>
