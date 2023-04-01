@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CP Fitness || Atividades</title>
+
+        <link rel="stylesheet" href="../Css/Estilo01.css">
+
+        <link rel="shotcut icon" href="../Img padrao/favicon.png">
+        
+        <meta charset="utf-8">
+
+        <script src="../Img padrao/formulario.js">
+            
+        </script>
+        <style>
+            /*Css Atividades*/
+            #menuAtv{
+                box-shadow: 9px 05px 1px #BB0A21;}
+            #menuAtv:hover{
+                box-shadow: 9px 05px 1px white; }
+            header{
+                display: none;
+                 }
+
+        </style>
+    </head>
+    
+    <body>
+
+        <!-- Cabeçario -->
+        
+        <header id="oi"> 
+
+            <div><a href="../Home/Homepage1.html" name="homee"><img src="../Img padrao/Logo.jpg" id="img1"><legend>CP Fitness</legend></a></div>
+            
+            <ul>
+                <a href="../Sobre/sobre.html" id="linkCab"><li>Sobre</li></a>
+                <a href="../Atividades/atividades.html" id="linkCab"><li id="menuAtv">Atividades</li></a>
+                <a href="../pagamento/pagamento.html" id="linkCab"><img src="../Img padrao/pag2.png" id='img3'onmouseover='this.src="../Img padrao/pag1.png"'onmouseout='this.src="../Img padrao/pag2.png"' ></a>
+                <a href="../loginCadastro/Login.html" id="linkCab"><img src="../Img padrao/usuario2.png" id="img2" onmouseover="this.src='../Img padrao/usuario.png'" onmouseout="this.src='../Img padrao/usuario2.png'"></a>
+            </ul>
+
+        </header>
+        
+        <!-- Cabeçario FIM-->
+
+        <!-- Atividades Banner e Menu-->
+        <div class="atv">
+            
+            <!--Banner--><img src="capa.png" id="trocarimg"><!--FIM Banner-->
+        
+
+        
+             <!--Menu-->
+
+                <div class="menu2">
+                    <figure id="menu2Icon"><img src="icon.png"  id=M2icon1  onclick="img01();"><figcaption>musculação</figcaption></figure>
+                    <figure id="menu2Icon2"><img src="icon8.png" id=M2icon2 onclick="img02();" ><figcaption>corrida</figcaption></figure>
+                    <figure id="menu2Icon3"><img src="icon3.png"  id=M2icon3   onclick="img03();"><figcaption>Jiu-jitsu</figcaption></figure>
+                    <figure id="menu2Icon4"><img src="icon4.png"id=M2icon4  onclick="img04();"><figcaption>zumba</figcaption></figure>
+                   
+                    <figure id="menu2Icon6"><img src="icon6.png" id=M2icon6  onclick="img06();"><figcaption>funcional</figcaption></figure>
+                    <figure id="menu2Icon7"><img src="icon7.png"id=M2icon7 onclick="img07();"><figcaption>alimentação</figcaption></figure>
+                </div>
+                <div class="test">
+                    <button id="aparecer" onclick="aparecer()">+</button>
+                    <button id="esconder" onclick="esconder()">-</button>
+                </div>
+            
+                </div>
+            <!--Fim Menu-->
+
+        <!-- FIM Atividades Banner e Menu -->
+
+    </body>
+</html>
